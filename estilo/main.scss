@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+$blanco: #fff;
+$azul: #0264ad;
+$celeste: #08b5f8;
+$amarillo: #fff20e; 
+
+// Reseteo
+
+* {    
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;   
+}
+
+// General
+
+body {
+    font-family: 'Open Sans';
+    color: $azul;
+    font-size: 1.2rem;   
+}
+
+img {
+  max-width: 100%;
+}
+
+
+@import 'header';
+@import 'nosotros';
+@import 'footer';
+@import 'media';

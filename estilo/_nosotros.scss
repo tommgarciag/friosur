@@ -1,0 +1,51 @@
+.nosotros {
+    background-color: $blanco;
+    width: 100vw;
+    margin: 4rem 0;
+    height: auto; 
+
+    &__info {        
+        background-color: inherit;        
+        width: 80%;        
+        margin: 0 auto;        
+
+        h2 {
+            font-family: 'Raleway';
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__vectores {
+        background-color: inherit;        
+        width: 80%;        
+        margin: 0 auto;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 30%;            
+
+            span {
+                font-weight: 700;
+                font-family: 'Raleway';
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 1.4rem;
+                letter-spacing: 1px;
+            }
+
+            img {
+                width: 60%;
+            }
+        }       
+
+    }
+}

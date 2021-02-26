@@ -1,0 +1,66 @@
+.header {    
+    background-color: $blanco;
+    width: 100vw;
+    height: auto;      
+
+    .nav {
+        
+        background-color: inherit;        
+        width: 80%;        
+        margin: 2rem auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__links {
+            font-size: 1.4rem;
+            width: 50%;            
+            list-style: none;  
+            display: flex;
+            justify-content: space-between;
+            align-items: center;    
+            
+        }
+
+        &__item {
+            
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: 'Raleway';
+            letter-spacing: 1px;   
+            color: $azul;         
+        }
+
+        .logo {
+            width: 20%;            
+        }
+    }
+
+    .portada {
+        width: 100%;
+        height: 450px;
+        background: url(../img/foto-portada.png) no-repeat center;
+        background-size: cover;
+        color: $blanco;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &__texto {             
+            width: 80%;          
+
+            h1 {
+                text-transform: uppercase;
+                font-family: "Raleway";
+                font-weight: 700;
+                font-size: 3.5rem;
+            }
+        }
+        
+    }
+}
+
+
+
