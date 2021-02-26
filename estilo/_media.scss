@@ -32,43 +32,53 @@
 }
 
 @media screen and (max-width: 674px) {
-    .header {   
-        .nav {
-            &__links {
-                width: 70%;
-                font-size: 1rem;
-            }
-        }     
-
-        .portada {
-
-            &__texto {
-                h1 {
-                    font-size: 2rem;
-                }
-
-                p {
-                    font-size: 0.8rem;
-                }
-            }
-        }
-    }    
-}
-
-@media screen and (max-width: 390px) {
     .header {
         .nav {
             flex-direction: column;
 
             &__links {
                 width: 100%;                
-                font-size: 1rem;
+                font-size: 1.2rem;
+            }
+
+            .portada {
+
+                &__texto {
+                    h1 {
+                        font-size: 2rem;
+                    }
+    
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
             }
 
             .logo {
-                width: 40%;    
+                width: 50%;    
                 margin-bottom: 2rem;        
             }
         }
+    } 
+}   
+
+@media screen and (max-width: 390px) {
+    .header {
+        .nav {
+            &__links {
+                font-size: 1rem;                
+            }
+        }
+
+        .portada {
+
+            &__texto {
+                h1 {
+                    font-size: 1.8rem;
+                }               
+            }
+        }
     }
+
 }
+
