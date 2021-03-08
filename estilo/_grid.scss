@@ -1,0 +1,83 @@
+.sucursales_grid {
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,245px);
+    grid-gap: 15px;
+}
+
+.sucursal {
+
+    &_comodoro {
+        background: url(../img/sucursal_cr.png) no-repeat center;
+        background-size: cover;
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+    }
+
+    &_madryn {
+        background: url(../img/sucursal_madryn.png) no-repeat center;
+        background-size: cover;
+    }
+
+    &_trelew {
+        background: url(../img/sucursal_trelew.png) no-repeat center;
+        background-size: cover;
+    }
+
+    &_sao {
+        background: url(../img/sucursal_sao.png) no-repeat center;
+        background-size: cover;
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    &_caleta {
+        background: url(../img/sucursal_caleta.png) no-repeat center;
+        background-size: cover;
+    }
+
+    &_esquel {
+        background: url(../img/sucursal_esquel.png) no-repeat center;
+        background-size: cover;
+    }
+
+    &_gallegos {
+        background: url(../img/sucursal_gallegos.png) no-repeat center;
+        background-size: cover;
+    }
+}
+
+.centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.caption {       
+    text-transform: uppercase;
+    color: $blanco;
+    width: 100%;
+    h2 {
+        font-size: 2.4rem;
+        text-shadow: 2px 4px 8px black;
+        font-weight: bold;  
+        margin-bottom: 20px;
+        
+             
+    }
+    p {        
+        cursor: pointer;
+        box-shadow: 2px 4px 8px black;
+        text-shadow: 2px 4px 8px black;
+        width: 30%;
+        margin: auto;
+        border: 1px solid $blanco;
+        padding: 5px;
+        border-radius: 8px;
+    }
+}

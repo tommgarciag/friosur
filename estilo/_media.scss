@@ -28,6 +28,28 @@
         }
     }
 
+    .sucursales_grid {        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;         
+    }
+
+    .sucursal {
+        &_madryn,
+        &_comodoro,
+        &_caleta,
+        &_esquel,
+        &_gallegos,
+        &_sao,
+        &_trelew {
+            width: 100%;
+            height: 300px;
+        }
+
+
+    }
+
     
 }
 
