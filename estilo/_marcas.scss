@@ -1,0 +1,22 @@
+.marcas {
+    width: 100vw;  
+    height: auto;  
+    margin: 4rem 0;
+
+    &_contenedor {
+        width: 80%;       
+        height: auto;                    
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(3,1fr); 
+        grid-gap: 2%;
+               
+        
+    }
+    
+    &_item {
+        width: 60%;        
+    }
+    
+}
