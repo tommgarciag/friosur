@@ -9,14 +9,15 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(3,1fr); 
+        grid-template-rows: repeat(3,1fr);         
         grid-gap: 2%;
                
         
     }
     
-    &_item {
-        width: 60%;        
+    &_item {        
+        width: 60%; 
+        margin: auto;       
     }
     
 }
