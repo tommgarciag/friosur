@@ -297,21 +297,22 @@ img {
 }
 
 .faq_question {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: 'Raleway';
-  margin: 0px;
-  padding: 0px 0px 5px 0px;
-  display: inline-block;
   cursor: pointer;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
-.faq_answer_container {
-  height: 0px;
-  overflow: hidden;
-  padding: 0px;
-  margin-bottom: 1rem;
+.faq_answer {
+  display: none;
+  font-weight: normal;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.open {
+  display: block;
 }
 
 .footer {
