@@ -14,7 +14,7 @@ const fotos = ['./img/estmenzoa-logo-web.png',
                 './img/toro-logo-web.png'
                 ];
                 
-let $marcas = document.querySelector('.marcas_contenedor');
+let $marcas = document.querySelector('.marcas_grid');
 
 for (foto of fotos) {
     let $div = document.createElement('div');    
