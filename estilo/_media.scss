@@ -53,7 +53,7 @@
     }
 
     .marcas {   
-        &_contenedor {            
+        &_grid {            
             grid-template-columns: repeat(4,1fr);
             grid-template-rows: repeat(4,1fr);           
         }        
@@ -93,7 +93,7 @@
     } 
 
     .marcas {   
-        &_contenedor {            
+        &_grid {            
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(8,1fr);   
             grid-gap: 2%;        

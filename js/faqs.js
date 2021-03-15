@@ -20,19 +20,17 @@ sucursales.addEventListener('click', (e) => {
     e.preventDefault();
     //console.log(e.target);
     if (e.target.classList.contains('mas_info')) {
-        const info_sucursales = e.target.parentElement.parentElement.children[1];
-        const caption_sucursal = e.target.parentElement;        
-           
+        const info_sucursal = e.target.parentElement.parentElement.children[1];
+        const caption_sucursal = e.target.parentElement;            
         caption_sucursal.style.display = 'none';
-        info_sucursales.style.display = 'block';       
+        info_sucursal.style.display = 'flex';              
     }
 
     if (e.target.classList.contains('menos_info')) {
-        const info_sucursales = e.target.parentElement.parentElement;
-        const caption_sucursal = e.target.parentElement.parentElement.parentElement.children[0];
-        console.log(caption_sucursal);        
-        info_sucursales.style.display= 'none';    
-        caption_sucursal.style.display = 'block';
+        const info_sucursal = e.target.parentElement;
+        const caption_sucursal = e.target.parentElement.parentElement.children[0];       
+        info_sucursal.style.display= 'none';           
+        caption_sucursal.style.display = 'flex';        
     }
     
 });
