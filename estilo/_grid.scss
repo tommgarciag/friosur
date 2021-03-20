@@ -87,8 +87,8 @@
 }
 
 .info {
-    color: $blanco;
-    font-weight: bold;
+    color: $blanco;    
+    font-weight: normal;
     text-shadow: 1px 1px 1px black;
     width: 100%;   
     height: 100%; 
@@ -97,29 +97,15 @@
     justify-content: center;
     flex-flow: column;
 
-    .direccion {
+    .direccion, 
+    .wapp,
+    .tel {
         padding: 10px;
         font-size: 1.4rem;
         text-shadow: 2px 2px 3px black;
 
         i {
-            color: red;
-            margin-right: 10px;
-        }
-
-        a {
-            text-decoration: none;            
-            color: $blanco;
-        }
-    }
-
-    .wapp {
-        padding: 10px;
-        font-size: 1.4rem;
-        text-shadow: 2px 2px 3px black;
-
-        i {
-            color: green;
+            color: $celeste;
             margin-right: 10px;
         }
 
@@ -131,25 +117,9 @@
         span {
             margin-left: 10px;
         }
-
     }
 
-    .tel {
-        padding: 10px;
-        font-size: 1.4rem;
-        text-shadow: 2px 2px 3px black;
-
-        i {
-            color: blue;
-            margin-right: 10px;
-        }
-
-        a {
-            text-decoration: none;            
-            color: $blanco;
-        }
-        
-    }
+    
 
     .menos_info {        
         cursor: pointer;
@@ -160,6 +130,7 @@
         border: 1px solid $blanco;
         padding: 5px;
         border-radius: 8px;
+        text-transform: uppercase;
         // display: none;
     }
 
