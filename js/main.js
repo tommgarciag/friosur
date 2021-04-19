@@ -11,7 +11,8 @@ const fotos = ['./img/estmenzoa-logo-web.png',
                 './img/salteña-logo-web.png',
                 './img/serenisima-logo-web.png',
                 './img/silk-logo-web.png',
-                './img/toro-logo-web.png'
+                './img/toro-logo-web.png',
+                './img/keiko-logo-web.png'
                 ];
                 
 let $marcas = document.querySelector('.marcas_grid');
@@ -26,6 +27,8 @@ for (foto of fotos) {
 }
 
 //console.log($marcas);
+
+
 
 
 

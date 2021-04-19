@@ -7,8 +7,8 @@
 }
 
 body {
-  font-family: 'Open Sans';
-  color: #0264ad;
+  font-family: 'Open Sans' !important;
+  color: #0264ad !important;
   font-size: 1.2rem;
 }
 
@@ -22,47 +22,25 @@ img {
   height: auto;
 }
 
-.header .nav {
-  background-color: inherit;
-  width: 80%;
-  margin: 2rem auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .nav__links {
-  font-size: 1.4rem;
-  width: 50%;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .nav__item {
-  text-decoration: none;
+.header .navbar {
+  background-color: #fff !important;
+  width: 90%;
+  margin: auto;
+  font-weight: bold;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 700;
-  font-family: 'Raleway';
-  letter-spacing: 1px;
-  color: #0264ad;
 }
 
-.header .nav .logo {
-  width: 20%;
+.header .navbar .nav-link {
+  color: #0264ad !important;
+}
+
+.header .navbar .navbar-toggler {
+  color: #0264ad !important;
+}
+
+.header .navbar .navbar-toggler-icon {
+  color: #0264ad !important;
 }
 
 .header .portada {
@@ -103,7 +81,7 @@ img {
 
 .nosotros__info {
   background-color: inherit;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -159,173 +137,6 @@ img {
   width: 60%;
 }
 
-.sucursales_grid {
-  width: 80%;
-  height: auto;
-  margin: 2rem auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (245px)[3];
-      grid-template-rows: repeat(3, 245px);
-  grid-gap: 15px;
-}
-
-.sucursal_comodoro {
-  background: url(../img/sucursal_cr.png) no-repeat center;
-  background-size: cover;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / 3;
-}
-
-.sucursal_madryn {
-  background: url(../img/sucursal_madryn.png) no-repeat center;
-  background-size: cover;
-}
-
-.sucursal_trelew {
-  background: url(../img/sucursal_trelew.png) no-repeat center;
-  background-size: cover;
-}
-
-.sucursal_sao {
-  background: url(../img/sucursal_sao.png) no-repeat center;
-  background-size: cover;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / 3;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-}
-
-.sucursal_caleta {
-  background: url(../img/sucursal_caleta.png) no-repeat center;
-  background-size: cover;
-}
-
-.sucursal_esquel {
-  background: url(../img/sucursal_esquel.png) no-repeat center;
-  background-size: cover;
-}
-
-.sucursal_gallegos {
-  background: url(../img/sucursal_gallegos.png) no-repeat center;
-  background-size: cover;
-}
-
-.centrado {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.caption {
-  text-transform: uppercase;
-  color: #fff;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-}
-
-.caption h2 {
-  font-size: 2.4rem;
-  text-shadow: 2px 4px 8px black;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.caption .mas_info {
-  cursor: pointer;
-  -webkit-box-shadow: 2px 4px 8px black;
-          box-shadow: 2px 4px 8px black;
-  text-shadow: 2px 4px 8px black;
-  width: 30%;
-  margin: auto;
-  border: 1px solid #fff;
-  padding: 5px;
-  border-radius: 8px;
-}
-
-.info {
-  color: #fff;
-  font-weight: normal;
-  text-shadow: 1px 1px 1px black;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-}
-
-.info .direccion,
-.info .wapp,
-.info .tel {
-  padding: 10px;
-  font-size: 1.4rem;
-  text-shadow: 2px 2px 3px black;
-}
-
-.info .direccion i,
-.info .wapp i,
-.info .tel i {
-  color: #08b5f8;
-  margin-right: 10px;
-}
-
-.info .direccion a,
-.info .wapp a,
-.info .tel a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.info .direccion span,
-.info .wapp span,
-.info .tel span {
-  margin-left: 10px;
-}
-
-.info .menos_info {
-  cursor: pointer;
-  -webkit-box-shadow: 2px 4px 8px black;
-          box-shadow: 2px 4px 8px black;
-  text-shadow: 2px 4px 8px black;
-  width: 30%;
-  margin: 10px auto;
-  border: 1px solid #fff;
-  padding: 5px;
-  border-radius: 8px;
-  text-transform: uppercase;
-}
-
 .marcas {
   width: 100vw;
   height: auto;
@@ -333,13 +144,13 @@ img {
 }
 
 .marcas_contenedor {
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 0 auto;
 }
 
 .marcas_contenedor h3 {
-  font-family: 'Raleway';
+  font-family: 'Raleway' !important;
   font-weight: 700;
   font-size: 1.5em;
   margin-bottom: 2rem;
@@ -365,8 +176,8 @@ img {
 }
 
 .faqs {
-  width: 80%;
-  margin: 2rem auto;
+  width: 90%;
+  margin: 4rem auto;
 }
 
 .faqs h2 {
@@ -414,7 +225,7 @@ img {
 
 .footer__head {
   color: #fff;
-  width: 80%;
+  width: 90%;
   margin: 2rem auto;
 }
 
@@ -441,10 +252,6 @@ img {
 }
 
 @media screen and (max-width: 954px) {
-  .header .nav__links {
-    width: 60%;
-    font-size: 1.2rem;
-  }
   .header .portada__texto h1 {
     font-size: 2.5rem;
   }
@@ -457,27 +264,6 @@ img {
   .nosotros__vectores__item {
     width: 60%;
   }
-  .sucursales_grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    grid-gap: 0;
-  }
-  .sucursal_madryn, .sucursal_comodoro, .sucursal_caleta, .sucursal_esquel, .sucursal_gallegos, .sucursal_sao, .sucursal_trelew {
-    width: 100%;
-    height: 300px;
-    margin: 1rem 0;
-  }
   .marcas_grid {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -487,25 +273,11 @@ img {
 }
 
 @media screen and (max-width: 674px) {
-  .header .nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .header .nav__links {
-    width: 100%;
-    font-size: 1.2rem;
-  }
-  .header .nav .portada__texto h1 {
+  .header .portada__texto h1 {
     font-size: 2rem;
   }
-  .header .nav .portada__texto p {
+  .header .portada__texto p {
     font-size: 0.8rem;
-  }
-  .header .nav .logo {
-    width: 50%;
-    margin-bottom: 2rem;
   }
   .marcas_grid {
     -ms-grid-columns: (1fr)[2];
@@ -521,9 +293,6 @@ img {
 }
 
 @media screen and (max-width: 390px) {
-  .header .nav__links {
-    font-size: 1rem;
-  }
   .header .portada__texto h1 {
     font-size: 1.8rem;
   }

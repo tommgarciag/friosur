@@ -3,38 +3,26 @@
     width: 100vw;
     height: auto;      
 
-    .nav {
+    .navbar {
         
-        background-color: inherit;        
-        width: 80%;        
-        margin: 2rem auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        background-color: $blanco !important;        
+        width: 90%;        
+        margin: auto;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
 
-        &__links {
-            font-size: 1.4rem;
-            width: 50%;            
-            list-style: none;  
-            display: flex;
-            justify-content: space-between;
-            align-items: center;    
-            
+        .nav-link {
+            color: $azul !important;
         }
 
-        &__item {
-            
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 700;
-            font-family: 'Raleway';
-            letter-spacing: 1px;   
-            color: $azul;         
+        .navbar-toggler {
+            color: $azul !important;            
         }
 
-        .logo {
-            width: 20%;            
-        }
+        .navbar-toggler-icon {
+            color: $azul !important;
+        }        
     }
 
     .portada {
