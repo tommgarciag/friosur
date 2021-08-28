@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans' !important;
+  color: #0264ad !important;
+  font-size: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.whatsapp-link {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+}
+
+.whatsapp-link a {
+  display: block;
+  width: 100%;
+}
+
+.whatsapp-link a img {
+  max-width: 100%;
+}
+
+.header {
+  background-color: #fff;
+  width: 100vw;
+  height: auto;
+}
+
+.header .navbar {
+  background-color: #fff !important;
+  width: 90%;
+  margin: auto;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.header .navbar .nav-link {
+  color: #0264ad !important;
+}
+
+.header .navbar .navbar-toggler {
+  color: #0264ad !important;
+}
+
+.header .navbar .navbar-toggler-icon {
+  color: #0264ad !important;
+}
+
+.header .portada {
+  width: 100%;
+  height: 450px;
+  background: url(../img/foto-portada.png) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.header .portada__texto {
+  width: 80%;
+}
+
+.header .portada__texto h1 {
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.nosotros {
+  background-color: #fff;
+  width: 100vw;
+  margin: 4rem 0;
+  height: auto;
+}
+
+.nosotros__info {
+  background-color: inherit;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nosotros__info h2 {
+  font-family: 'Raleway';
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.nosotros__vectores {
+  background-color: inherit;
+  width: 80%;
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nosotros__vectores__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+.nosotros__vectores__item span {
+  font-weight: 700;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.nosotros__vectores__item img {
+  width: 60%;
+}
+
+.marcas {
+  width: 100vw;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.marcas_contenedor {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.marcas_contenedor h3 {
+  font-family: 'Raleway' !important;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.marcas_grid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem auto;
+}
+
+.marcas_item {
+  width: 12%;
+  margin: 0 10px;
+}
+
+.faqs {
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.faqs h2 {
+  margin-bottom: 2rem;
+  font-family: 'Raleway';
+}
+
+.faq_question {
+  font-size: 1.4rem;
+  font-family: 'Raleway';
+  cursor: pointer;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.faq_answer {
+  display: none;
+  font-weight: normal;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.open {
+  display: block;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #0264ad;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .container {
+  width: 90%;
+  padding: 2rem 0;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+footer .container p {
+  margin: 0;
+}
+
+footer .head {
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .head ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+footer .head p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+footer .head i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+footer .head li:last-child a i {
+  margin-right: 0;
+}
+
+footer .subnav {
+  width: 30%;
+  height: 100%;
+}
+
+footer .subnav ul {
+  padding: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .copyright {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (max-width: 954px) {
+  .header .portada__texto h1 {
+    font-size: 2.5rem;
+  }
+  .nosotros__vectores {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nosotros__vectores__item {
+    width: 60%;
+  }
+  .marcas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .marcas_item {
+    width: 10%;
+    margin: 0px 5px;
+  }
+  .whatsapp-link {
+    width: 60px;
+    height: 60px;
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+  footer .container {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    height: auto;
+  }
+  footer .container .head {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .container .head p {
+    margin-bottom: 2rem;
+  }
+  footer .container .subnav {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  footer .container .subnav ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .container .subnav ul li {
+    margin: 0.5rem 0;
+  }
+  footer .container .copyright {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .container .copyright p:last-child {
+    margin-top: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .header .portada__texto h1 {
+    font-size: 2rem;
+  }
+  .header .portada__texto p {
+    font-size: 1rem;
+  }
+  .marcas_item {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .marcas_item {
+    width: 17%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

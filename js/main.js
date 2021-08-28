@@ -26,8 +26,6 @@ for (foto of fotos) {
     $marcas.appendChild($div);
 }
 
-//console.log($marcas);
-
 
 
 
