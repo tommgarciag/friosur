@@ -25,8 +25,7 @@ class Sucursal {
     this.imagen = imagen;
     this.nombre = nombre;
     this.direccion = direccion;
-    this.tel = tel;
-    this.linkTel = tel;
+    this.tel = tel;   
     this.wapp = wapp;
     this.linkWapp = linkWapp;
     this.contacto = contacto;
@@ -35,7 +34,7 @@ class Sucursal {
   mostrarTel() {
     if (this.tel !== "") {
       return `
-          <a style="text-decoration:none;" href="tel:${this.tel} target="_blank" >
+          <a style="text-decoration:none;" href="tel:${this.tel}" target="_blank" >
             <i class="fas fa-phone-alt"></i>${this.tel}               
           </a>
           `;
